@@ -234,23 +234,23 @@
 const getMaxUnicodeSumWord = (phrase) => {
     const words = phrase.split(' ');
     
-    // let maxUnicodeSum = 0;
-    // let maxUnicodeSumWord = '';
+    let maxUnicodeSum = 0;
+    let maxUnicodeSumWord = '';
 
-    // for (const word of words) {
-    //     let total = 0;
+    for (const word of words) {
+        let total = 0;
 
-    //     for (let i = 0; i < word.length; i++) {
-    //         total += word.charCodeAt(i);
-    //     }
+        for (let i = 0; i < word.length; i++) {
+            total += word.charCodeAt(i);
+        }
 
-    //     if (total > maxUnicodeSum) {
-    //         maxUnicodeSum = total;
-    //         maxUnicodeSumWord = word;
-    //     }
-    // }
+        if (total > maxUnicodeSum) {
+            maxUnicodeSum = total;
+            maxUnicodeSumWord = word;
+        }
+    }
 
-    // return maxUnicodeSumWord;
+    return maxUnicodeSumWord;
 
     // const array = [{ value: 1 }, { value: 2}, { value: 3}];
     // const total = array.reduce((acc, { value }) => acc + value, 0);
