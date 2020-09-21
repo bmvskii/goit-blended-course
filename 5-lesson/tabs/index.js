@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabsContentRef = document.querySelector('.tabs-content');
+    
     const tabsRef = document.querySelector('.tabs');
+    const secondTabsRef = document.querySelector('.second-tabs');
 
     const onTabClickHandler = (event) => {
         const { target, currentTarget } = event;
@@ -26,4 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     tabsRef.addEventListener('click', onTabClickHandler);
+    secondTabsRef.addEventListener('click', onTabClickHandler);
 });
